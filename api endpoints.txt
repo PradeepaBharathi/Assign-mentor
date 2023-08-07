@@ -1,0 +1,17 @@
+Write API to create Mentor
+https://assign-mentor-2ge7.onrender.com/app/add-mentor
+
+Write API to create Student
+https://assign-mentor-2ge7.onrender.com/app/add-student
+
+Write API to Assign a student to Mentor
+https://assign-mentor-2ge7.onrender.com/app/edit-mentors/:id
+
+Write API to Assign or Change Mentor for particular Student
+https://assign-mentor-2ge7.onrender.com/app/edit-many/:id
+
+Write API to show all students for a particular mentor
+https://assign-mentor-2ge7.onrender.com/app/mentors/find/64c771cf833889eb25701a91
+
+Write an API to show the previously assigned mentor for a particular student.
+https://assign-mentor-2ge7.onrender.com/app/students/find/64c7acbd833889eb25701ab1
