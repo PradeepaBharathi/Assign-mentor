@@ -14,4 +14,5 @@ export async function dbConnection() {
 
 
 export var ObjectId = Obj.ObjectId;
-export const client =  await dbConnection()
+export const client = await dbConnection()
+

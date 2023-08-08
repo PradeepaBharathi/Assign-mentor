@@ -1,5 +1,5 @@
 import express from "express";
-import { addNewMentor, addNewStudent,  deleteMentorById, editMentor, editStudent, getAllMentor, getAllStudents, getMentorById, getStudentById, getUnassignedStudents, updateManyStudents } from "../controllers/stud-ment.js";
+import { addNewMentor, addNewStudent,   deleteStudentById, editMentor, editStudent, getAllMentor, getAllStudents, getMentorById, getStudentById, getUnassignedStudents, updateManyStudents } from "../controllers/stud-ment.js";
 
 
 const router = express.Router();
@@ -174,12 +174,14 @@ router.get('/all-mentor', async (req, res) => {
 //delete mentor
 router.delete("/delete/:id",async(req,res)=>{
     try {
-        const {id} = req.params;
+        const { id } = req.params;
+        console.log(id)
         const deleteStudent = req.body;
+        console.log(deleteStudent)
         if(!id || !deleteStudent){
             return res.status(400).json({message:"Wrong request"})
         }
-        const result = await deleteMentorById(id,deleteStudent)
+        const result = await deleteStudentById(id,deleteStudent)
         if(!result.deletedCount<=0){
             return res.status(400).json({message:"error occured"})
         }

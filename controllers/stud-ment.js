@@ -38,10 +38,10 @@ export function getAllMentor(req){
     .toArray();
 }
 
-export function deleteMentorById(id,data){
+export function deleteStudentById(id,data){
     return client
     .db("B42")
-    .collection("mentors")
+    .collection("students")
     .findOneAndDelete({_id : new ObjectId(id)},{$set:data})
 }
 
